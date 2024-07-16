@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RyujinxUI</title>
+  <link rel="icon" href="/ryujinx-ui/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="time" id="clock">--:--</p>
+    <div class="uicon"><img id="profile_icon" src="contents/uicon_default.png" alt="customisable_user_icon"></div>
+    <div id="game-list"></div>
+    <div id="game-info"></div>
+    <p class="version">Version 0.3.0</p>
+    <script>
+      function padZero(number) {
+      return number < 10 ? '0' + number : number;
+    }
+
+    function updateClock() {
+      const now = new Date();
+      const hours = padZero(now.getHours());
+      const minutes = padZero(now.getMinutes());
+      const timeString = hours + ':' + minutes;
+      document.getElementById('clock').textContent = timeString;
+    }
+
+    setInterval(updateClock, 1000);
+
+    updateClock();
+    </script>
+    <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+/*Variables*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --primary-color: #e1131d;
+    --secondary-color: #4e4c4f;
+    --lightbackground: #ECEAED;
+    --darkbackground: #333333;
+    --lighttext: #000000;
+    --darktext: #f4f4f4;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--lightbackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.logo{
+    width: 128px;
+    height: 128px;
+}
+
+.name{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.description{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.redtext{
+    color: var(--primary-color);
+}
