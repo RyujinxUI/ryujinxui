@@ -2,7 +2,7 @@
 A fully joystick-controllable user interface for [Ryujinx](https://github.com/Ryujinx/Ryujinx)
 
 >[!IMPORTANT]
->Version : **v0.2.0**
+>Version : **v0.3.0 (alpha3)**
 >*For the moment, RyujinxUI is only available for Windows*
 
 ## Documentation
